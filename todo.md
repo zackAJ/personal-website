@@ -1,12 +1,12 @@
 # HIGH
 
-[ ] Landing page layout
-    [ ] push the hero section up
-    [ ] section 1 recent post
-    [ ] section 2 recent project
-    [ ] remove website built with, keep it in readme for credit
-    [ ] me section with a link to a 'my story'
-    [ ] move footer social links to header
+[] Landing page layout
+    [] push the hero section up
+    [] section 1 recent post
+    [] section 2 recent project
+    [] remove website built with, keep it in readme for credit
+    [] me section with a link to a 'my story'
+    [] move footer social links to header
 
 [ ] Content
     [ ] change the logo or remove it for now
