@@ -1,7 +1,7 @@
 # HIGH
 
 - [ ] Landing page layout
-  - [ ] Push the hero section up
+  - [x] Push the hero section up
   - [ ] Section 1: Recent posts
   - [ ] Section 2: Recent projects
   - [ ] Remove "website built with"; keep it in README for credit
@@ -27,3 +27,6 @@
 - [ ] Functionalities
   - [ ] Shortcut for search
   - [ ] Make sure new pages are searchable
+
+- [x] Styling
+  - [x] having the stars background always showing
