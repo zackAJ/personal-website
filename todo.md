@@ -5,7 +5,7 @@
   - [x] Section 1: Recent posts
   - [x] Section 2: Recent projects
   - [x] Remove "website built with"; keep it in README for credit
-  - [ ] "Me" section with a link to "My Story"
+  - [x] "Me" section with a link to "My Story"
   - [ ] Move footer social links to header
 
 - [ ] Content
