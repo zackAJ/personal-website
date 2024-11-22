@@ -4,6 +4,7 @@ import PageLayout from "@layouts/PageLayout.astro"
 import TopLayout from "@layouts/TopLayout.astro"
 import BottomLayout from "@layouts/BottomLayout.astro"
 import { WORK } from "@consts"
+import StackCard from "@components/StackCard.astro"
 
 const collection = await getCollection("work")
 
@@ -26,6 +27,29 @@ function formatWorkDate(input: Date | string) {
   const year = new Date(input).getFullYear()
   return `${month} ${year}`
 }
+
+const stack = [
+  { 
+    text: "PHP", 
+    icon: "php", 
+    href: "https://php.net" 
+  },
+  { 
+    text: "Laravel", 
+    icon: "laravel", 
+    href: "https://laravel.com" 
+  },
+  { 
+    text: "Javascript", 
+    icon: "javascript", 
+    href: "https://www.javascript.com" 
+  },
+  { 
+    text: "Vue", 
+    icon: "vue", 
+    href: "https://www.vuejs.org" 
+  },
+]
 ---
 
 <PageLayout title={WORK.TITLE} description={WORK.DESCRIPTION}>
@@ -34,7 +58,26 @@ function formatWorkDate(input: Date | string) {
       {WORK.TITLE}
     </div>
   </TopLayout>
+
   <BottomLayout>
+      <!-- Tech Stack Section -->
+    <section class="animate mb-10">
+      <div class="space-y-4">
+        <p class="font-semibold text-black dark:text-white">
+          Weapons of choice
+        </p>
+        <div class="flex flex-wrap items-center gap-2 mt-5">
+          {stack.map(item => (
+            <StackCard 
+              text={item.text}
+              icon={item.icon}
+              href={}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+
     <ul>
       { 
         work.map((entry) => (

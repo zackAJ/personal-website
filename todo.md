@@ -2,9 +2,9 @@
 
 - [ ] Landing page layout
   - [x] Push the hero section up
-  - [ ] Section 1: Recent posts
-  - [ ] Section 2: Recent projects
-  - [ ] Remove "website built with"; keep it in README for credit
+  - [x] Section 1: Recent posts
+  - [x] Section 2: Recent projects
+  - [x] Remove "website built with"; keep it in README for credit
   - [ ] "Me" section with a link to "My Story"
   - [ ] Move footer social links to header
 
@@ -27,6 +27,7 @@
 - [ ] Functionalities
   - [ ] Shortcut for search
   - [ ] Make sure new pages are searchable
+  - [ ] Route params based filters
 
 - [x] Styling
   - [x] having the stars background always showing
