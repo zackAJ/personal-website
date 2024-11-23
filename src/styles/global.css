@@ -148,3 +148,13 @@ article img {
 #meteors .shower.ul {
   @apply rotate-315;
 }
+
+/* My styles */
+
+.reading-overlay {
+  @apply bg-white dark:bg-black !bg-opacity-90;
+}
+
+.basic-overlay {
+  @apply bg-white dark:bg-black !bg-opacity-70;
+}

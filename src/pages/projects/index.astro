@@ -21,7 +21,7 @@ const tags = [...new Set(projects.flatMap(project => project.data.tags))]
     </div>
   </TopLayout>
   <BottomLayout>
-    <div class="animate">
+    <div class="animate basic-overlay">
       <Projects client:load tags={tags} data={projects} />
     </div>
   </BottomLayout>
