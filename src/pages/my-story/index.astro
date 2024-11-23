@@ -1,8 +1,9 @@
 ---
-import PageLayout from "@layouts/PageLayout.astro"
-import TopLayout from "@layouts/TopLayout.astro"
-import BottomLayout from "@layouts/BottomLayout.astro"
-import { MY_STORY } from "@consts"
+import PageLayout from '@layouts/PageLayout.astro'
+import TopLayout from '@layouts/TopLayout.astro'
+import BottomLayout from '@layouts/BottomLayout.astro'
+import { MY_STORY } from '@consts'
+import TechStack from '@components/TechStack.astro'
 ---
 
 <PageLayout title={MY_STORY.TITLE} description={MY_STORY.DESCRIPTION}>
@@ -13,34 +14,97 @@ import { MY_STORY } from "@consts"
   </TopLayout>
 
   <BottomLayout>
-      <!-- About Section -->
-      <section class="animate">
-        <article>
-          <p>I am a <b><i>software engineer</i></b>, <b><i>laravel artisan</i></b>, <b><i>neovim user</i></b>, <b><i>dev tools / packages enthusiast</i></b>, <b><i>open source contributor</i></b> and <b><i>all around nice guy</i></b>.</p>
+    <section class="animate">
+      <article class="pb-0">
+        <p>
+          I am a <b><i>software engineer</i></b>, <b><i>laravel artisan</i></b>, <b
+            ><i>neovim user</i></b
+          >, <b><i>dev tools / packages enthusiast</i></b>, <b
+            ><i>open source contributor</i></b
+          > and <b><i>all around nice guy</i></b>.
+        </p>
 
-          <h4>During my career</h4>
-          <p>Professionally I work mainly in web SAAS agile development using Laravel and Vue.js in a fast, demanding and changing environment where speed, planning and iterating are key factors.</p>
+        <TechStack />
 
-          <h4>What I like to code on my own</h4>
-          <p>I like building cool dev tools, packages and ideas I also like contributing and discovering open source tools and projects.</p>
+        <h4>During my career</h4>
+        <p>
+          Professionally I work mainly in web SAAS agile development using
+          Laravel and Vue.js in a fast, demanding and changing environment where
+          speed, planning and iterating are key factors.
+        </p>
 
-          <h4><i>- ∞</i></h4>
-          <p>I used to hate computers, I didn't even own a proper one. I always was a console type of guy.</p>
+        <h4>What I like to code on my own</h4>
+        <p>
+          I like building cool dev tools, packages and ideas I also like
+          contributing and discovering open source tools and projects.
+        </p>
+      </article>
+    </section>
 
-          <h4><i>2017</i></h4>
-          <p>I've done great in my studies until I made it to university studying a mix of science and technology. <b><i>I felt lost.</i></b></p>
+    <!-- Arc -->
+    <section class="animate">
+      <article>
+        <h4>The arc</h4>
+        <h5>
+          <i
+            >- ∞<i></i>
+            <p>
+              I used to hate computers, I didn't even own a proper one. I always
+              was a console type of guy.
+            </p>
 
-          <h4><i>2020</i></h4>
-          <p>I dropout of university to search my true passion.</p>
+            <h5>
+              <i
+                >2017<i></i>
+                <p>
+                  I've done great in my studies until I made it to university
+                  studying a mix of science and technology. <b
+                    ><i>I felt lost.</i></b
+                  >
+                </p>
 
-          <h4><i>2021</i></h4>
-          <p>my passion turned out to be <b><i>coding.</i></b> I went for an associate degree in web and mobile development where we studied different technologies and principles.</p>
+                <h5>
+                  <i
+                    >2020<i></i>
+                    <p>I dropout of university to search my true passion.</p>
 
-          <h4><i>2023</i></h4>
-          <p>I fell in love with <b><i>laravel</i></b> and building, <b><i>the sky is the limit.</i></b> I landed my first internship during a beachless summer and I got hired after that summer, as a full-time full-stack developer.</p>
-          <p><b><i>and that's the arc, from no world to hello world to let's build the world...</i></b></p>
-        </article>
-      </section>
+                    <h5>
+                      <i
+                        >2021<i></i>
+                        <p>
+                          my passion turned out to be <b><i>coding.</i></b> I went
+                          for an associate degree in web and mobile development where
+                          we studied different technologies and principles.
+                        </p>
 
-  </BottomLayout>
-</PageLayout>
+                        <h5>
+                          <i
+                            >2023<i></i>
+                            <p>
+                              I fell in love with <b><i>laravel</i></b> and building,
+                              <b><i>the sky is the limit.</i></b> I landed my first
+                              internship during a beachless summer and I got hired
+                              after that summer, as a full-time full-stack developer.
+                            </p>
+                            <p>
+                              <b
+                                ><i
+                                  >and that's the arc, from no world to hello
+                                  world to let's build the world...</i
+                                ></b
+                              >
+                            </p>
+                          </i>
+                        </h5>
+                      </i>
+                    </h5>
+                  </i>
+                </h5></i
+              >
+            </h5></i
+          >
+        </h5>
+      </article>
+    </section></BottomLayout
+  ></PageLayout
+>

@@ -11,13 +11,12 @@
 - [ ] Content
   - [ ] Change the logo or remove it for now
   - [ ] Insert my social links
-  - [ ] Hero section: Show "Who am I" link with "My Work" link
 
 # NORMAL
 
 - [ ] Pages
-  - [ ] "My Story" page
-    - [ ] Same section as "Me" section + My Story
+  - [x] "My Story" page
+    - [x] Same section as "Me" section + My Story
   - [ ] "OSS" page
     - [ ] Packages section
     - [ ] Contributions section
