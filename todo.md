@@ -6,7 +6,7 @@
   - [x] Section 2: Recent projects
   - [x] Remove "website built with"; keep it in README for credit
   - [x] "Me" section with a link to "My Story"
-  - [ ] Move footer social links to header
+  - [x] Move footer social links to header
 
 - [ ] Content
   - [ ] Change the logo or remove it for now
