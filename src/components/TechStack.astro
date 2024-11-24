@@ -1,0 +1,42 @@
+---
+import StackCard from '@components/StackCard.astro'
+export interface Props { className?: string; } 
+const { className } = Astro.props;
+
+const stack = [
+  {
+    text: 'PHP',
+    icon: 'php',
+    href: 'https://php.net',
+  },
+  {
+    text: 'Laravel',
+    icon: 'laravel',
+    href: 'https://laravel.com',
+  },
+  {
+    text: 'Javascript',
+    icon: 'javascript',
+    href: 'https://www.javascript.com',
+  },
+  {
+    text: 'Vue',
+    icon: 'vue',
+    href: 'https://www.vuejs.org',
+  },
+]
+---
+
+<!-- Tech Stack Section -->
+<section>
+  <div class:list={['space-y-4',className]}>
+    <p class="font-semibold text-black dark:text-white">Weapons of choice</p>
+    <div class="flex flex-wrap items-center gap-2 mt-5">
+      {
+        stack.map((item) => (
+      <StackCard text={item.text} icon={item.icon} href={} />
+        ))
+      }
+    </div>
+  </div>
+</section>

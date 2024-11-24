@@ -31,16 +31,21 @@ export const SEARCH: Page = {
   DESCRIPTION: "Search all posts and projects by keyword.",
 }
 
+export const MY_STORY: Page = {
+  TITLE: "My story",
+  DESCRIPTION: "Get to know who I am and how did I get here.",
+}
+
 // Links
 export const LINKS: Links = [
   { 
     TEXT: "Home", 
     HREF: "/", 
   },
-  { 
-    TEXT: "Work", 
-    HREF: "/work", 
-  },
+  // { 
+  //   TEXT: "Work", 
+  //   HREF: "/work", 
+  // },
   { 
     TEXT: "Blog", 
     HREF: "/blog", 
@@ -48,6 +53,10 @@ export const LINKS: Links = [
   { 
     TEXT: "Projects", 
     HREF: "/projects", 
+  },
+  { 
+    TEXT: "My story", 
+    HREF: "/my-story", 
   },
 ]
 
