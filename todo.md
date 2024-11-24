@@ -1,6 +1,6 @@
 # HIGH
 
-- [ ] Landing page layout
+- [x] Landing page layout
   - [x] Push the hero section up
   - [x] Section 1: Recent posts
   - [x] Section 2: Recent projects
@@ -9,7 +9,7 @@
   - [x] Move footer social links to header
 
 - [ ] Content
-  - [ ] Change the logo or remove it for now
+  - [ ] Change the logo to a rive animated svg
   - [ ] Insert my social links
 
 # NORMAL
