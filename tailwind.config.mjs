@@ -55,6 +55,9 @@ export default {
           },
         },
       },
+      backgroundImage:{
+        'radial-white':"radial-gradient(white, transparent 50%)"
+      },
     },
   },
   plugins: [require("@tailwindcss/typography")],
