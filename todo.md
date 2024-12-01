@@ -10,7 +10,7 @@
 
 - [ ] Content
   - [ ] Change the logo to a rive animated svg
-  - [ ] Insert my social links
+  - [x] Insert my social links
 
 # NORMAL
 
