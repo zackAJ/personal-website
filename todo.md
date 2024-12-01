@@ -9,8 +9,9 @@
   - [x] Move footer social links to header
 
 - [ ] Content
-  - [ ] Change the logo to a rive animated svg
+  - [x] Change the logo to a rive animated svg
   - [x] Insert my social links
+  - [ ] Update blog and projects
 
 # NORMAL
 
