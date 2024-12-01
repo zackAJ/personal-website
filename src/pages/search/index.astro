@@ -22,7 +22,7 @@ const data = [...posts, ...projects] as CollectionEntry<"blog">[]
     </div>
   </TopLayout>
   <BottomLayout>
-    <div class="animate">
+    <div class="animate basic-overlay">
       <Search client:load data={data}/>
     </div>
   </BottomLayout>
