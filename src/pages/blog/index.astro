@@ -21,7 +21,7 @@ const tags = [...new Set(posts.flatMap(post => post.data.tags))]
     </div>
   </TopLayout>
   <BottomLayout>
-    <div class="animate">
+    <div class="animate basic-overlay">
       <Blog client:load tags={tags} data={posts} />
     </div>
   </BottomLayout>

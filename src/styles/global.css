@@ -166,3 +166,13 @@ article img {
 .copy-svg {
   @apply w-full aspect-square text-white opacity-70 hover:opacity-90;
 }
+
+/* My styles */
+
+.reading-overlay {
+  @apply bg-white dark:bg-black !bg-opacity-90;
+}
+
+.basic-overlay {
+  @apply bg-white dark:bg-black !bg-opacity-70;
+}

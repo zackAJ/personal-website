@@ -1,5 +1,5 @@
 ---
-import { SITE, LINKS } from "@consts"
+import { SITE, LINKS, SOCIALS } from "@consts"
 import { cn } from "@lib/utils"
 const { pathname } = Astro.url
 const subpath = pathname.match(/[^/]+/g)
@@ -23,12 +23,6 @@ const subpath = pathname.match(/[^/]+/g)
       </svg>
     </a>
 
-    <a href="/rss.xml" target="_blank" aria-label={`Rss feed for ${SITE.TITLE}`} class="size-9 rounded-full p-2 items-center justify-center bg-transparent hover:bg-black/5 dark:hover:bg-white/20 stroke-current hover:stroke-black hover:dark:stroke-white border border-black/10 dark:border-white/25 transition-colors duration-300 ease-in-out">
-      <svg class="size-full">
-        <use href="/ui.svg#rss"></use>
-      </svg>
-    </a>
-
     <button id="drawer-theme-button" aria-label={`Toggle light and dark theme`} class="size-9 rounded-full p-2 items-center justify-center bg-transparent hover:bg-black/5 dark:hover:bg-white/20 stroke-current hover:stroke-black hover:dark:stroke-white border border-black/10 dark:border-white/25 transition-colors duration-300 ease-in-out">
       <svg class="block dark:hidden size-full">
         <use href="/ui.svg#sun"></use>
@@ -37,6 +31,25 @@ const subpath = pathname.match(/[^/]+/g)
         <use href="/ui.svg#moon"></use>
       </svg>
     </button>
+  </div>
+
+  <div class="order-1 sm:order-2 flex justify-center sm:justify-end mt-5">
+    <div class="flex flex-wrap gap-1 items-center justify-center">
+      {
+        SOCIALS.map((SOCIAL) => (
+          <a 
+            href={SOCIAL.HREF} 
+            target="_blank" 
+            aria-label={`${SITE.TITLE} on ${SOCIAL.NAME}`} 
+            class="group size-10 rounded-full p-2 items-center justify-center hover:bg-black/5 dark:hover:bg-white/20  blend"
+          >
+            <svg class="size-full fill-current group-hover:fill-black group-hover:dark:fill-white blend">
+              <use href={`/social.svg#${SOCIAL.ICON}`} />
+            </svg>
+          </a>
+        ))
+      }
+      </div>
   </div>
 </div>
 
