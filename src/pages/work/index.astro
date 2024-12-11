@@ -1,55 +1,10 @@
 ---
-import { getCollection } from "astro:content"
-import PageLayout from "@layouts/PageLayout.astro"
-import TopLayout from "@layouts/TopLayout.astro"
-import BottomLayout from "@layouts/BottomLayout.astro"
-import { WORK } from "@consts"
-import StackCard from "@components/StackCard.astro"
-
-const collection = await getCollection("work")
-
-collection.sort((a, b) => new Date(b.data.dateStart).getTime() - new Date(a.data.dateStart).getTime())
-
-const work = await Promise.all(
-  collection.map(async (item) => {
-    const { Content } = await item.render()
-    return { ...item, Content }
-  })
-)
-
-function formatWorkDate(input: Date | string) {
-  if (typeof input === "string") return input
-
-  const month = input.toLocaleDateString("en-US", {
-    month: "short",
-  })
-
-  const year = new Date(input).getFullYear()
-  return `${month} ${year}`
-}
-
-const stack = [
-  { 
-    text: "PHP", 
-    icon: "php", 
-    href: "https://php.net" 
-  },
-  { 
-    text: "Laravel", 
-    icon: "laravel", 
-    href: "https://laravel.com" 
-  },
-  { 
-    text: "Javascript", 
-    icon: "javascript", 
-    href: "https://www.javascript.com" 
-  },
-  { 
-    text: "Vue", 
-    icon: "vue", 
-    href: "https://www.vuejs.org" 
-  },
-]
+import PageLayout from '@layouts/PageLayout.astro'
+import TopLayout from '@layouts/TopLayout.astro'
+import BottomLayout from '@layouts/BottomLayout.astro'
+import { WORK } from '@consts'
+import TechStack from '@components/TechStack.astro'
+import Work from '@components/Work.astro'
 ---
 
 <PageLayout title={WORK.TITLE} description={WORK.DESCRIPTION}>
@@ -60,42 +15,85 @@ const stack = [
   </TopLayout>
 
   <BottomLayout>
-      <!-- Tech Stack Section -->
-    <section class="animate mb-10">
-      <div class="space-y-4">
-        <p class="font-semibold text-black dark:text-white">
-          Weapons of choice
-        </p>
-        <div class="flex flex-wrap items-center gap-2 mt-5">
-          {stack.map(item => (
-            <StackCard 
-              text={item.text}
-              icon={item.icon}
-            />
-          ))}
-        </div>
-      </div>
-    </section>
+    <div class="animate bg-white dark:bg-black !bg-opacity-90">
+      <section>
+        <article class="pb-0">
+          <p class="italic-bold">
+            I am a full-stack developer, laravel artisan, neovim user, dev tools
+            / packages enthusiast, open source contributor and all around nice
+            guy.
+          </p>
 
-    <ul>
-      { 
-        work.map((entry) => (
-          <li class="animate border-b border-black/10 dark:border-white/25 mt-4 py-8 first-of-type:mt-0 first-of-type:pt-0 last-of-type:border-none">
-            <div class="text-sm uppercase mb-4">
-              {formatWorkDate(entry.data.dateStart)} - {formatWorkDate(entry.data.dateEnd)}
-            </div>
-            <div class="text-black dark:text-white font-semibold">
-              {entry.data.company}
-            </div>
-            <div class="text-sm font-semibold">
-              {entry.data.role}
-            </div>
-            <article class="prose dark:prose-invert">
-              <entry.Content />
-            </article>
-          </li>
-        ))
-      }
-    </ul>
+          <TechStack />
+
+          <h4>During my career</h4>
+          <p>
+            Professionally I work mainly in web SAAS agile development using
+            Laravel and Vue.js in a fast, demanding and changing environment
+            where speed, planning and iterating are key factors.
+          </p>
+
+          <Work />
+
+          <h4>What I like to code on my own</h4>
+          <p>
+            I like building cool dev tools, packages and ideas I also like
+            contributing and discovering open source tools and projects.
+          </p>
+        </article>
+      </section>
+
+      <!-- Arc -->
+      <section>
+        <article>
+          <h4>The arc</h4>
+          <h5>- ∞</h5>
+          <p>
+            I used to hate computers, I didn't even own a proper one. I always
+            was a console type of guy.
+          </p>
+
+          <h5>2017</h5>
+          <p>
+            I've done great in my studies until I made it to university studying
+            a mix of science and technology. <b>I felt lost.</b>
+          </p>
+
+          <h5>2020</h5>
+          <p>I dropout of university to search my true passion.</p>
+
+          <h5>2021</h5>
+          <p>
+            my passion turned out to be <b>coding.</b> I went for an associate degree
+            in web and mobile development where we studied different technologies
+            and principles.
+          </p>
+
+          <h5>2023</h5>
+          <p>
+            I fell in love with <b>laravel</b> and building,
+            <b>the sky is the limit.</b> I landed my first internship during a beachless
+            summer and I got hired after that summer, as a full-time full-stack developer.
+          </p>
+
+          <h5>2025</h5>
+          <p>Looking for new opportunities and to build my first SAAS</p>
+
+          <p class="italic-bold">
+            and that's the arc, from no world to hello world to let's build the
+            world...
+          </p>
+        </article>
+      </section>
+    </div>
   </BottomLayout>
 </PageLayout>
+<style>
+  h5 {
+    font-weight: bold;
+  }
+  .italic-bold {
+    font-weight: bold;
+    font-style: italic;
+  }
+</style>

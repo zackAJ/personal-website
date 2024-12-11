@@ -31,21 +31,12 @@ export const SEARCH: Page = {
   DESCRIPTION: "Search all posts and projects by keyword.",
 }
 
-export const MY_STORY: Page = {
-  TITLE: "My story",
-  DESCRIPTION: "Get to know who I am and how did I get here.",
-}
-
 // Links
 export const LINKS: Links = [
   { 
     TEXT: "Home", 
     HREF: "/", 
   },
-  // { 
-  //   TEXT: "Work", 
-  //   HREF: "/work", 
-  // },
   { 
     TEXT: "Blog", 
     HREF: "/blog", 
@@ -55,8 +46,8 @@ export const LINKS: Links = [
     HREF: "/projects", 
   },
   { 
-    TEXT: "My story", 
-    HREF: "/my-story", 
+    TEXT: "Career", 
+    HREF: "/work", 
   },
 ]
 
@@ -65,8 +56,8 @@ export const SOCIALS: Socials = [
   { 
     NAME: "Email",
     ICON: "email", 
-    TEXT: "codeartbtw@gmail.com",
-    HREF: "mailto:codeartbtw@gmail.com",
+    TEXT: "aktouf98zakaria@gmail.com",
+    HREF: "mailto:aktouf98zakaria@gmail.com",
   },
   { 
     NAME: "Github",
