@@ -4,6 +4,7 @@ import TopLayout from '@layouts/TopLayout.astro'
 import BottomLayout from '@layouts/BottomLayout.astro'
 import { MY_STORY } from '@consts'
 import TechStack from '@components/TechStack.astro'
+import Work from '@components/Work.astro'
 ---
 
 <PageLayout title={MY_STORY.TITLE} description={MY_STORY.DESCRIPTION}>
@@ -17,13 +18,10 @@ import TechStack from '@components/TechStack.astro'
     <div class="animate bg-white dark:bg-black !bg-opacity-90">
       <section>
         <article class="pb-0">
-          <p>
-            I am a <b><i>software engineer</i></b>, <b><i>laravel artisan</i></b
-            >, <b><i>neovim user</i></b>, <b
-              ><i>dev tools / packages enthusiast</i></b
-            >, <b><i>open source contributor</i></b> and <b
-              ><i>all around nice guy</i></b
-            >.
+          <p class="italic-bold">
+            I am a full-stack developer, laravel artisan, neovim user, dev tools
+            / packages enthusiast, open source contributor and all around nice
+            guy.
           </p>
 
           <TechStack />
@@ -34,6 +32,8 @@ import TechStack from '@components/TechStack.astro'
             Laravel and Vue.js in a fast, demanding and changing environment
             where speed, planning and iterating are key factors.
           </p>
+
+          <Work />
 
           <h4>What I like to code on my own</h4>
           <p>
@@ -47,67 +47,53 @@ import TechStack from '@components/TechStack.astro'
       <section>
         <article>
           <h4>The arc</h4>
-          <h5>
-            <i
-              >- ∞<i></i>
-              <p>
-                I used to hate computers, I didn't even own a proper one. I
-                always was a console type of guy.
-              </p>
+          <h5>- ∞</h5>
+          <p>
+            I used to hate computers, I didn't even own a proper one. I always
+            was a console type of guy.
+          </p>
 
-              <h5>
-                <i
-                  >2017<i></i>
-                  <p>
-                    I've done great in my studies until I made it to university
-                    studying a mix of science and technology. <b
-                      ><i>I felt lost.</i></b
-                    >
-                  </p>
+          <h5>2017</h5>
+          <p>
+            I've done great in my studies until I made it to university studying
+            a mix of science and technology. <b>I felt lost.</b>
+          </p>
 
-                  <h5>
-                    <i
-                      >2020<i></i>
-                      <p>I dropout of university to search my true passion.</p>
+          <h5>2020</h5>
+          <p>I dropout of university to search my true passion.</p>
 
-                      <h5>
-                        <i
-                          >2021<i></i>
-                          <p>
-                            my passion turned out to be <b><i>coding.</i></b> I went
-                            for an associate degree in web and mobile development
-                            where we studied different technologies and principles.
-                          </p>
+          <h5>2021</h5>
+          <p>
+            my passion turned out to be <b>coding.</b> I went for an associate degree
+            in web and mobile development where we studied different technologies
+            and principles.
+          </p>
 
-                          <h5>
-                            <i
-                              >2023<i></i>
-                              <p>
-                                I fell in love with <b><i>laravel</i></b> and building,
-                                <b><i>the sky is the limit.</i></b> I landed my first
-                                internship during a beachless summer and I got hired
-                                after that summer, as a full-time full-stack developer.
-                              </p>
-                              <p>
-                                <b
-                                  ><i
-                                    >and that's the arc, from no world to hello
-                                    world to let's build the world...</i
-                                  ></b
-                                >
-                              </p>
-                            </i>
-                          </h5>
-                        </i>
-                      </h5>
-                    </i>
-                  </h5></i
-                >
-              </h5></i
-            >
-          </h5>
+          <h5>2023</h5>
+          <p>
+            I fell in love with <b>laravel</b> and building,
+            <b>the sky is the limit.</b> I landed my first internship during a beachless
+            summer and I got hired after that summer, as a full-time full-stack developer.
+          </p>
+
+          <h5>2025</h5>
+          <p>Looking for new opportunities and to build my first SAAS</p>
+
+          <p class="italic-bold">
+            and that's the arc, from no world to hello world to let's build the
+            world...
+          </p>
         </article>
       </section>
     </div>
   </BottomLayout>
 </PageLayout>
+<style>
+  h5 {
+    font-weight: bold;
+  }
+  .italic-bold {
+    font-weight: bold;
+    font-style: italic;
+  }
+</style>
