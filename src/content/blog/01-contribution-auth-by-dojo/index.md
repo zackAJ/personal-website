@@ -1,5 +1,5 @@
 ---
-title: "OS fix: auth by dojo"
+title: "Open source fix: auth by dojo"
 summary: "Fix issue where social user saving fails after oauth callback"
 date: "Oct 02 2024"
 draft: false
