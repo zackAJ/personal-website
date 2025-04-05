@@ -11,6 +11,7 @@ const logo = new rive.Rive({
 });
 
 document.addEventListener('mousemove', followCursor);
+document.addEventListener('touchmove', followCursor);
 
 function followCursor(event) {
   const logoPosition = logoCanvas.getBoundingClientRect();
