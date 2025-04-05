@@ -15,8 +15,21 @@ document.addEventListener('touchmove', followCursor);
 
 function followCursor(event) {
   const logoPosition = logoCanvas.getBoundingClientRect();
-  const dx = event.clientX - logoPosition.x;
-  const dy = event.clientY - logoPosition.y;
+
+  let cursorX,cursorY = 0;
+
+  if (event.type.includes(`touch`)) {
+    const { touches, changedTouches } = event.originalEvent ?? event;
+    const touch = touches[0] ?? changedTouches[0];
+    cursorX = touch.pageX;
+    cursorY = touch.pageY;
+  } else if (event.type.includes(`mouse`)) {
+    cursorX = event.clientX;
+    cursorY = event.clientY;
+  }
+
+  const dx = cursorX - logoPosition.x;
+  const dy = cursorY - logoPosition.y;
 
   const x = dx * 100 / logoPosition.width;
   const y = dy * 100 / logoPosition.height;
