@@ -11,7 +11,7 @@ import Background from "@components/Background.astro"
 let pathname = Astro.url.pathname.substring(1)
 let dif = pathname.substring(0,pathname.indexOf('/'))
 let isBlogPost =  dif === 'blog'
-let thumbnail = '/images/thumbnails/'+pathname.replace('blog/','')+'.png' 
+let thumbnail = '/images/thumbnails/'+pathname.replace('blog/','').replace('/','')+'.png' 
 ---
 
 <!doctype html>
