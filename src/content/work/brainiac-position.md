@@ -1,5 +1,5 @@
 ---
-company: "Fatoura"
+company: "Brainiac"
 role: "Full-stack developer"
 dateStart: "11/15/2023"
 dateEnd: "12/01/2024"

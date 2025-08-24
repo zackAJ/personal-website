@@ -1,5 +1,5 @@
 ---
-company: "Fatoura"
+company: "Brainiac"
 role: "Full-stack Intern"
 dateStart: "07/23/2023"
 dateEnd: "11/15/2023"
@@ -13,6 +13,6 @@ Taqwim is a tax tracking mobile app that keeps small businesses and solo entrepr
 
 **Contribution**
 - Built RESTful API and a progressive web app using Quasar/Vue.js, and react native's webview.
-- CMS / Admin dashboard using Laravel Nova.
+- CMS dashboard using Laravel Nova.
 - Integrated Push notifications via OneSignal.
 - Built the landing page.
